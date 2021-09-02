@@ -1,0 +1,38 @@
+name: login_signup
+description: A new Flutter project.
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+# google icon for login by finity_technologies
+  font_awesome_flutter: ^9.1.0  
+# statemanagement by finity_technologies
+  provider: ^6.0.0
+# for auth and store purpose by finity_technologies
+  flutter_signin_button: ^2.0.0
+  google_sign_in: ^5.0.7
+  cloud_firestore: ^2.5.0
+  firebase: ^9.0.1
+  firebase_core: ^1.5.0
+  firebase_auth: ^3.0.2
+  firebase_storage: ^10.0.2
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+
+  uses-material-design: true
+
