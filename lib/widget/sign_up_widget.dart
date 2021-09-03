@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:login_signup/pages/auth_page.dart';
 import 'package:login_signup/provider/google_sign_in.dart';
 import 'package:provider/provider.dart';
 
@@ -58,7 +59,13 @@ class SignUpWidget extends StatelessWidget {
                 minimumSize: Size(double.infinity, 40),
               ),
               icon: Icon(Icons.mail_outline),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => AuthPage(),
+                  ),
+                );
+              },
               label: Text('Sign Up with Email'),
             ),
             SizedBox(
