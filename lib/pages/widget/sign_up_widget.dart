@@ -13,7 +13,7 @@ class SignUpWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomPaint(painter: BackgroundPainter(),),
+            CustomPaint(painter: BackgroundPainter( ),),
             Spacer(),
             FlutterLogo(
               size: 120,
