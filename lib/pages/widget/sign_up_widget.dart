@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'package:login_signup/provider/google_sign_in.dart';
 import 'package:provider/provider.dart';
 
@@ -13,7 +12,6 @@ class SignUpWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomPaint(painter: BackgroundPainter( ),),
             Spacer(),
             FlutterLogo(
               size: 120,
@@ -53,6 +51,19 @@ class SignUpWidget extends StatelessWidget {
               ),
             ),
             Spacer(),
+            ElevatedButton.icon(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.lightBlue,
+                onPrimary: Colors.white,
+                minimumSize: Size(double.infinity, 40),
+              ),
+              icon: Icon(Icons.mail_outline),
+              onPressed: () {},
+              label: Text('Sign Up with Email'),
+            ),
+            SizedBox(
+              height: 10,
+            ),
             ElevatedButton.icon(
               style: ElevatedButton.styleFrom(
                 primary: Colors.black45,
