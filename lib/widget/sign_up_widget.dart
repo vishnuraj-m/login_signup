@@ -1,3 +1,4 @@
+import 'package:firebase/firebase.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:login_signup/pages/auth_page.dart';
@@ -86,7 +87,7 @@ class SignUpWidget extends StatelessWidget {
                     Provider.of<GoogleSignInProvider>(context, listen: false);
                 provider.googleLogin();
               },
-              label: Text('Sign Up with Google'),
+              label: Text('Sign In with Google'),
             ),
             Spacer(),
             SizedBox(
